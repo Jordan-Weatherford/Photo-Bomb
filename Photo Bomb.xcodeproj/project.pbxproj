@@ -135,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171707521EDDF245000BF569 /* Build configuration list for PBXNativeTarget "Photo Bomb" */;
 			buildPhases = (
+				426CA785E7C7F91579F829B9 /* [CP] Check Pods Manifest.lock */,
 				171707261EDDF244000BF569 /* Sources */,
 				171707271EDDF244000BF569 /* Frameworks */,
 				171707281EDDF244000BF569 /* Resources */,
+				3CFEE666B8D0748BDDFF0DAB /* [CP] Embed Pods Frameworks */,
+				A58F1D23D9F7B571A764E688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171707551EDDF245000BF569 /* Build configuration list for PBXNativeTarget "Photo BombTests" */;
 			buildPhases = (
+				00D2C916C061D9944B46CFA0 /* [CP] Check Pods Manifest.lock */,
 				1717073A1EDDF245000BF569 /* Sources */,
 				1717073B1EDDF245000BF569 /* Frameworks */,
 				1717073C1EDDF245000BF569 /* Resources */,
+				162111DDB3856328CD4634C1 /* [CP] Embed Pods Frameworks */,
+				590D5A93AB7106D28B1A0071 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171707581EDDF245000BF569 /* Build configuration list for PBXNativeTarget "Photo BombUITests" */;
 			buildPhases = (
+				AD47DF3F624A777F86DB3B09 /* [CP] Check Pods Manifest.lock */,
 				171707451EDDF245000BF569 /* Sources */,
 				171707461EDDF245000BF569 /* Frameworks */,
 				171707471EDDF245000BF569 /* Resources */,
+				7376BA57B0E354C496155072 /* [CP] Embed Pods Frameworks */,
+				41A3B226C23D38127D518B28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +205,7 @@
 				TargetAttributes = {
 					171707291EDDF244000BF569 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = M8LZR6NRDC;
 						ProvisioningStyle = Automatic;
 					};
 					1717073D1EDDF245000BF569 = {
@@ -256,6 +266,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D2C916C061D9944B46CFA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		162111DDB3856328CD4634C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo BombTests/Pods-Photo BombTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CFEE666B8D0748BDDFF0DAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Bomb/Pods-Photo Bomb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A3B226C23D38127D518B28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo BombUITests/Pods-Photo BombUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		426CA785E7C7F91579F829B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		590D5A93AB7106D28B1A0071 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo BombTests/Pods-Photo BombTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7376BA57B0E354C496155072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo BombUITests/Pods-Photo BombUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58F1D23D9F7B571A764E688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photo Bomb/Pods-Photo Bomb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD47DF3F624A777F86DB3B09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		171707261EDDF244000BF569 /* Sources */ = {
@@ -416,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8LZR6NRDC;
 				INFOPLIST_FILE = "Photo Bomb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JordanWeatherford.Photo-Bomb";
@@ -428,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8LZR6NRDC;
 				INFOPLIST_FILE = "Photo Bomb/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JordanWeatherford.Photo-Bomb";
@@ -509,6 +659,7 @@
 				171707541EDDF245000BF569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		171707551EDDF245000BF569 /* Build configuration list for PBXNativeTarget "Photo BombTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +668,7 @@
 				171707571EDDF245000BF569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		171707581EDDF245000BF569 /* Build configuration list for PBXNativeTarget "Photo BombUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +677,7 @@
 				1717075A1EDDF245000BF569 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
